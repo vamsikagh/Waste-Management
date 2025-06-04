@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp page</title>
+    <link rel="stylesheet">
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            background: transparent;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            height: 100vh;
+            padding-top: 40px;
+            /* Move the form upwards */
+            background: transparent;
+            /* Optional: removes background color */
+        }
+
+        .signin-container {
+            background: transparent;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: none;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .signin-header {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .register-link {
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .register-link a {
+            color: #00ffcc;
+            text-decoration: none;
+        }
+
+        .register-link a:hover {
+            text-decoration: underline;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: black;
+        }
+
+        input::placeholder {
+            color: grey;
+        }
+
+        p {
+            text-align: center;
+        }
+        
+        .social-buttons {
+            display: flex;
+            justify-content: center;
+            margin: 15px 0;
+            gap: 30px;
+        }
+
+        .social-buttons img {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            border-radius: 30px;
+            padding: 4px;
+            border: 2px solid beige;
+
+        }
+
+        .signin {
+            background-color:  #2e7d32;
+            border: none;
+            width: 100%;
+            padding: 12px;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+            color: white;
+        }
+
+        .signin:hover{
+                background-color:#66bb6a;
+            }
+
+
+        .google-btn {
+            background: white;
+            color: black;
+            border: 1px solid #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: 100%;
+            padding: 12px;
+            border-radius: 6px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="signin-container">
+        <div class="signin-header">Create Account</div>
+        <div class="register-link">Already have an account ? <a href="login.html">Log in</a></div>
+        <form>
+            <label>Username or Email</label><br>
+            <input type="text" placeholder="Username or Email" required />
+            <br>
+
+            <label>Password</label><br>
+            <input type="password" placeholder="Enter password" required />
+            <br>
+
+
+            <button type="submit" class="signin">Sign Up</button>
+        </form>
+        <p> or</p>
+        <button class="google-btn">
+            <img src="google.jpg" width="25" alt="Google" /> Continue with Google
+        </button>
+
+        <div class="social-buttons">
+            <img src="facebook.png" alt="Facebook" />
+            <img src="linkedin.jpg" alt="LinkedIn" />
+            <img src="github.png" alt="GitHub" />
+
+        </div>
+
+
+    </div>
+</body>
+
+</html>
